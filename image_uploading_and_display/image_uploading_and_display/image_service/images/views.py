@@ -8,7 +8,7 @@ class FolderListCreateView(generics.ListCreateAPIView):
     queryset = Folder.objects.all()
     serializer_class = FolderSerializer
 
-class ImageListCreateView(generics.ListCreateAPIView):
+    class ImageListCreateView(generics.ListCreateAPIView):
     serializer_class = ImageSerializer
 
     def get_queryset(self):
